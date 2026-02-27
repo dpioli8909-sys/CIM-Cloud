@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CASO I - MILANO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <h1>CASO I - MILANO</h1>
+      <p class="subtitle">icloud online</p>
+    </div>
+    <div class="meta">
+      <span class="pill">Accesso effettuato</span>
+      <button class="ghost" onclick="logout()">Esci</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hint">Sezioni archivio (clicca per espandere)</div>
+
+  <section class="accordion" data-open="true">
+    <button class="acc-head" type="button" aria-expanded="true">
+      <span>01_ICONOGRAFIA</span>
+      <span class="count">3 file</span>
+      <span class="chev">▾</span>
+    </button>
+    <div class="acc-body">
+      <ul class="filelist">
+        <li><a href="IMG_01_ss01.pdf" target="_blank">IMG_01_ss01.pdf</a><span class="tag">PDF</span></li>
+        <li><a href="IMG_02_bsa03.pdf" target="_blank">IMG_02_bsa03.pdf</a><span class="tag">PDF</span></li>
+        <li><a href="IMG_03_cm08.pdf" target="_blank">IMG_03_cm08.pdf</a><span class="tag">PDF</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="accordion">
+    <button class="acc-head" type="button" aria-expanded="false">
+      <span>02_TOPOGRAFIA</span>
+      <span class="count">4 file</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="acc-body">
+      <ul class="filelist">
+        <li>
+          <button class="filebtn locked" onclick="unlock('umbilicus','RIL_01_ss01.pdf')">RIL_01_ss01.pdf</button>
+          <span class="tag lock">LOCK</span>
+        </li>
+        <li>
+          <button class="filebtn locked" onclick="unlock('santatecla','RIL_02_sd04.pdf')">RIL_02_sd04.pdf</button>
+          <span class="tag lock">LOCK</span>
+        </li>
+        <li><a href="RIL_03_cg05.pdf" target="_blank">RIL_03_cg05.pdf</a><span class="tag">PDF</span></li>
+        <li>
+          <button class="filebtn locked" onclick="unlock('famedio','RIL_04_cm08.pdf')">RIL_04_cm08.pdf</button>
+          <span class="tag lock">LOCK</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="accordion">
+    <button class="acc-head" type="button" aria-expanded="false">
+      <span>03_NOTE_DI_CAMPO_AUDIO</span>
+      <span class="count">3 file</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="acc-body">
+      <ul class="filelist">
+        <li><a href="MEMO_01_ss01.m4a" target="_blank">MEMO_01_ss01.m4a</a><span class="tag">M4A</span></li>
+        <li><a href="MEMO_02_sd04.m4a" target="_blank">MEMO_02_sd04.m4a</a><span class="tag">M4A</span></li>
+        <li><a href="MEMO_03_sb07.m4a" target="_blank">MEMO_03_sb07.m4a</a><span class="tag">M4A</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="accordion">
+    <button class="acc-head" type="button" aria-expanded="false">
+      <span>04_RASSEGNA_STAMPA</span>
+      <span class="count">2 file</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="acc-body">
+      <ul class="filelist">
+        <li>
+          <button class="filebtn locked" onclick="unlock('serpente','PRESS_01_bsa03.pdf')">PRESS_01_bsa03.pdf</button>
+          <span class="tag lock">LOCK</span>
+        </li>
+        <li><a href="PRESS_02_sd04.pdf" target="_blank">PRESS_02_sd04.pdf</a><span class="tag">PDF</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="accordion">
+    <button class="acc-head" type="button" aria-expanded="false">
+      <span>05_RELAZIONI</span>
+      <span class="count">1 file</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="acc-body">
+      <ul class="filelist">
+        <li><a href="TEC_01_nse06.pdf" target="_blank">TEC_01_nse06.pdf</a><span class="tag">PDF</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div>Accesso: <span class="mono">CASO I</span> • Sessione locale</div>
+    <div class="small">I file bloccati richiedono solo la password.</div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
